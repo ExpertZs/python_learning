@@ -107,5 +107,19 @@ print(math.fabs(-5.6))
 
 print(math.fsum([.1, .1, .1, .1, .1, .1, .1, .1, .1, .1]))
 
+#If statement
+
+price = 1000000
+has_good_credit = False
+
+if has_good_credit:
+    down_payment = 0.2 * price
+else:
+    down_payment = 0.1 * price
+print(down_payment)
+
+
+
+
 
 
