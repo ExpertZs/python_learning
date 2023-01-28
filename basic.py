@@ -75,7 +75,7 @@ print(message.replace("Beginners", 'Absolute Beginners'))
 print(message.replace('n', 'k'))
 print("Python" in message)
 
-#Arethmetic operator in python
+#Arithmetic operator in python
 print(10 + 3)           #Addition
 print(10 - 3)           #Subtruction
 print(10 * 3)           #Multiplication
@@ -87,5 +87,10 @@ print(10 ** 3)          #Exponent which is power
 number = 10
 number += 5             #Augmented assignment operator
 print(number)
+
+#Operator Precedence
+number = (10 + 3) * 2 ** 2        #Parenthesis> Exponential > multiplication/devision > addition/subtruction
+print(number)
+
 
 
