@@ -118,6 +118,22 @@ else:
     down_payment = 0.1 * price
 print(down_payment)
 
+#Logical Operator
+has_high_income = False
+has_good_credit = True
+has_criminal_record= False
+if has_high_income or has_good_credit:              #Logical OR operator
+    print("Eligible for loan")
+else:
+    print("Not eligible for loan")
+
+if has_good_credit and not has_criminal_record:     #logical AND operator with logical NOT operator
+    print("eligible for loan")
+else:
+    print("not eligible for loan")
+
+
+
 
 
 
