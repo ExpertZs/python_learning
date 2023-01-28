@@ -140,6 +140,13 @@ elif len(name) > 50:
 else:
     print("Name looks good")
 
+#While loop
+index = 1
+while index<=5:
+    print("*" * index)
+    index +=1
+print("completed")
+
 
 
 
