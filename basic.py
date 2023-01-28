@@ -147,6 +147,20 @@ while index<=5:
     index +=1
 print("completed")
 
+#For loops
+for item in ["Python", "JaVA", "c"]:
+    print(item)
+
+for item in range(2, 20, 2):        #range(starting point, endpoint , step)
+    print(item)
+#Imagine A shopping cart and we have to calculate total amount of price of all items holded to the cart
+prices = [2, 25, 35, 5, 10, 6, 7]
+total = 0
+for price in prices:
+    total+=price
+print(f"Total: {total}")
+
+
 
 
 
