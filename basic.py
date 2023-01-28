@@ -18,3 +18,12 @@ print('Hi ' + user_name)
 person_name= input('What is your name? ')
 favourite_color = input('What is your favourite color? ')
 print(person_name + ' likes ' + favourite_color)
+#Type conversion
+birth_year= input('Enter your birth year ')
+age = 2023 - int(birth_year)
+print(age)
+
+    #Ask a user's weight in pound and print in kilogram
+user_weight_lbs = input('Weight in lbs ')
+weight_kg = int(user_weight_lbs) * 0.45
+print(weight_kg)
