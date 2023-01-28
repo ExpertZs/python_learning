@@ -64,3 +64,16 @@ formatted_message = f'{first_name} [{last_name}] is a coder'    #Printing format
 print(message)
 print(formatted_message)
 
+#String Methods
+message= 'Python for Beginners'
+print(message)
+print(len(message))
+print(message.upper())
+print(message.lower())
+print(message.find('n'))
+print(message.replace("Beginners", 'Absolute Beginners'))
+print(message.replace('n', 'k'))
+print("Python" in message)
+
+
+
