@@ -131,7 +131,14 @@ if has_good_credit and not has_criminal_record:     #logical AND operator with l
     print("eligible for loan")
 else:
     print("not eligible for loan")
-
+#Comparison operator
+name = 'Zahidul'
+if len(name) < 3:
+    print("Name must be at least 3 characters")
+elif len(name) > 50:
+    print("Name must be maximum 50 characters")
+else:
+    print("Name looks good")
 
 
 
