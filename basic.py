@@ -55,3 +55,12 @@ print(string_index_testing[2:])     #To print all charecters from index 2 in the
 print(string_index_testing[:])      #To print all charecter of string
 print(string_index_testing[1:-1])   #To print all charecters in the index from 1 to second last of string
 
+
+#Formatted strings
+first_name ='Zahidul'
+last_name = 'Islam'
+message = first_name + ' [' + last_name + '] is a coder'        #Printing in a manual formatted string
+formatted_message = f'{first_name} [{last_name}] is a coder'    #Printing formatted string with method
+print(message)
+print(formatted_message)
+
