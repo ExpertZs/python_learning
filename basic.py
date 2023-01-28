@@ -92,5 +92,20 @@ print(number)
 number = (10 + 3) * 2 ** 2        #Parenthesis> Exponential > multiplication/devision > addition/subtruction
 print(number)
 
+#Math Functions
+number = 5.4
+print(round(number))
+print(abs(-5.4))
+
+import math
+number1 = 3
+number2 =4
+print(math.ceil(number))
+print(math.floor(number))
+print(math.factorial(number1))
+print(math.fabs(-5.6))
+
+print(math.fsum([.1, .1, .1, .1, .1, .1, .1, .1, .1, .1]))
+
 
 
