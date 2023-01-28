@@ -172,6 +172,14 @@ for number_count in numbers:
     for x in range(number_count):
         output+= "x"
     print(output)
+#List in python
+numbers =[2, 9, 10, 41, 6, 1, 2, 5, 8]
+maximum= numbers[0]
+for number in numbers:
+    if number> maximum :
+        maximum = number
+print(f"Maximum : {maximum}")
+
 
 
 
