@@ -246,6 +246,39 @@ print(x)
 print(y)
 print(z)
 
+#Dictionaries
+customer = {
+    "name": "Zahidul",
+    "age" : 27,
+    "phone": "+8801754898514"
+}
+print(customer["phone"])
+customer["birthdate"]= "28-11-1996"
+print(customer)
+print(customer.get("name"))
+print(customer.get("address"))
+
+        #Receiving phone number in digit and return in words
+digit_mapping ={
+    "0": "Zero",
+    "1": "One",
+    "2": "Two",
+    "3": "Three",
+    "4": "Four",
+    "5": "Five",
+    "6": "Six",
+    "7": "Seven",
+    "8": "Eight",
+    "9": "Nine",
+}
+phone = input("Enter your Phone number ")
+output = ""
+for charecters in phone:
+    output += digit_mapping.get(charecters, "!!" )+ " "
+print(output)
+
+
+
 
 
 
