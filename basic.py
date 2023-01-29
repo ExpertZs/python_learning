@@ -292,13 +292,13 @@ digit_mapping ={
 #print(output)
 
 #Function
-def greet_user():
-    print("Good mornning..")
+def greet_user(first_name, last_name):                  #Parameter
+    print(f"Good mornning {first_name} {last_name}")
     print("Welcome to the world of python")
 
 
 print("Hello")
-greet_user()
+greet_user("Zahidul", "Islam")                          #Argument
 print("Thanks")
 
 
