@@ -40,8 +40,7 @@ Here I will practice following
         Modules
         Packages
         Generating Random Values
-        Working with Directories 
-        Pypi and Pip
+        Working with Directories
         Project 1: Automation with Python
         Project 2: Machine Learning with Python 
         Project 3: Building a Website with Django
