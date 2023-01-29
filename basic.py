@@ -353,3 +353,17 @@ point1 = Point()
 point1.x = 10
 print(point1.x)
 point1.move()
+
+#Constructor
+class Person:
+    def __init__(self, name):               #constructor
+        self.name = name
+    def talk(self):
+        print(f"Hello, I am {self.name}")
+
+
+person = Person("Zahidul")
+person.talk()
+person1 = Person("Sakib")
+person1.talk()
+
