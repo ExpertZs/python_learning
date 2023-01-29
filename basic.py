@@ -227,6 +227,9 @@ for item in numbers:
         unique.append(item)
 print(f"After removing duplicate value {unique}")
 
+#Tuples                 #Tuples are immuteable. You can only access the item of tuples but can not change it
+numbers =(2,6,7)
+print(numbers[2])
 
 
 
