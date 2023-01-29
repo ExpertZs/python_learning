@@ -271,15 +271,24 @@ digit_mapping ={
     "8": "Eight",
     "9": "Nine",
 }
-phone = input("Enter your Phone number ")
-output = ""
-for charecters in phone:
-    output += digit_mapping.get(charecters, "!!" )+ " "
+#phone = input("Enter your Phone number ")
+#output = ""
+#for charecters in phone:
+ #   output += digit_mapping.get(charecters, "!!" )+ " "
+#print(output)
+
+#Emoji converter
+message = input("> ")
+words = message.split(" ")
+output= " "
+emojis ={
+    ":)": "😂",
+    "(:": "😢"
+}
+
+for word in words:
+    output+= emojis.get(word, word) + " "
 print(output)
-
-
-
-
 
 
 
