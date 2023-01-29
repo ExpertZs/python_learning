@@ -22,7 +22,6 @@ Here I will practice following
         Nested Loops
         Lists
         2D Lists
-        My Complete Python Course 
         List Methods
         Tuples
         Unpacking

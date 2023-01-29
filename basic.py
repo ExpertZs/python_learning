@@ -196,6 +196,39 @@ for row in matrix:
     for item in row:
         print(item)
 
+#List method
+numbers = [15, 8, 6, 4, 2, 47, 41, 4]
+print(numbers)
+numbers.append(-6)              #Insert a new item in the last in list
+print(numbers)
+numbers.insert(3,3)             #Insert a new item in the mentioned index in list
+print(numbers)
+numbers.remove(41)              #Remove a item from the list
+print(numbers)
+numbers.index(47)               #Checking existence of an item in the  list
+print(numbers)
+numbers.pop(2)                  #Remove an item of mentioned index from the list
+print(numbers)
+print(numbers.count(4))         #Checking number of occurence of an item in the list
+print(41 in numbers)            #Checking existence of an item in the list
+numbers2 = numbers.copy()       #Copy the existing list
+numbers.clear()                 #Remove all items from the list
+print(numbers)
+print(numbers2)
+numbers2.sort()                 #Sorting the list
+print(numbers2)
+numbers2.reverse()              #sorting in decending order
+print(numbers2)
+        #Removing duplicate item from the list
+numbers=[2, 6, 3, -5, -2, 6, -5, -2, 2, 3]
+unique=[]
+for item in numbers:
+    if item not in unique:
+        unique.append(item)
+print(f"After removing duplicate value {unique}")
+
+
+
 
 
 
