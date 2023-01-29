@@ -341,3 +341,15 @@ except ZeroDivisionError:
 except ValueError:
     print("Invalid Value")
 
+#Class
+class Point:
+    def draw(self):
+        print("draw")
+    def move(self):
+        print("move")
+
+
+point1 = Point()
+point1.x = 10
+print(point1.x)
+point1.move()
