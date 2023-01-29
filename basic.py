@@ -302,8 +302,12 @@ greet_user("Zahidul", "Islam")                          #Argument
 greet_user(last_name="shakib", first_name="Sadman")     #Keyword Argument
 print("Thanks")
 
+#Return Statement
+def square(number):
+    return number * number
 
 
-
+result = square(6)
+print(result)
 
 
