@@ -231,6 +231,20 @@ print(f"After removing duplicate value {unique}")
 numbers =(2,6,7)
 print(numbers[2])
 
+#Unpacking
+
+        #For tuples
+coordinate = (2,5,4)
+x, y, z = coordinate
+print(x)
+print(y)
+print(z)
+        #For list
+numbers = [1, 9, 3]
+x, y, z = numbers
+print(x)
+print(y)
+print(z)
 
 
 
