@@ -278,19 +278,28 @@ digit_mapping ={
 #print(output)
 
 #Emoji converter
-message = input("> ")
-words = message.split(" ")
-output= " "
-emojis ={
-    ":)": "😂",
-    "(:": "😢"
-}
 
-for word in words:
-    output+= emojis.get(word, word) + " "
-print(output)
+#message = input("> ")
+#words = message.split(" ")
+#output= " "
+#emojis ={
+ #   ":)": "😂",
+  #  "(:": "😢"
+#}
+
+#for word in words:
+ #   output+= emojis.get(word, word) + " "
+#print(output)
+
+#Function
+def greet_user():
+    print("Good mornning..")
+    print("Welcome to the world of python")
 
 
+print("Hello")
+greet_user()
+print("Thanks")
 
 
 
