@@ -324,13 +324,13 @@ def emoji_converter(message):
     return output
 
 
-message = input("> ")
-result= emoji_converter(message)
-print(result)
+#message = input("> ")
+#result= emoji_converter(message)
+#print(result)
 
 #Exception
 try:
-    age = int(input("Age: "))
+    age =22 # int(input("Age: ")) #To avoid receiving input from user
     income = 25000
     risk = income/age
     print(age)
@@ -367,3 +367,24 @@ person.talk()
 person1 = Person("Sakib")
 person1.talk()
 
+#Inheritance
+class Animal:
+    def walk(self):
+        print("walk")
+    def drink(self):
+        print("drink")
+
+
+class Cat(Animal):
+    def meaw(self):
+        print("Meaw")
+
+class Dog(Animal):
+    def berking(self):
+        print("Berking")
+
+
+cat = Cat()
+cat.meao()
+cat.walk()
+cat.drink()
