@@ -180,6 +180,21 @@ for number in numbers:
         maximum = number
 print(f"Maximum : {maximum}")
 
+#2D list
+matrix = [
+    [1, 5, 8],
+    [8, 5, 6],
+    [-5, -6, 8]
+]
+print(matrix)
+print(matrix[2][1])
+matrix[2][1]=6
+print(matrix[2][1])
+print(matrix)
+
+for row in matrix:
+    for item in row:
+        print(item)
 
 
 
