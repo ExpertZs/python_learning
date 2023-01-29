@@ -420,4 +420,13 @@ class Dice:
 dice= Dice()
 print(dice.roll())
 
+#Working with directories
+from pathlib import Path
+path= Path("ecommerce")
+print(path.exists())                    #Checking existance of the above mentioned directory
+
+path1 = Path()
+for file in path1.glob('*.py'):         #Accessing to the list of all .py file in the current directory
+    print(file)
+
 
