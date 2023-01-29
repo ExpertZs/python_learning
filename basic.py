@@ -408,6 +408,16 @@ from ecommerce.shipping import calculate_shipping       #import specific funcion
 
 calculate_shipping()
 
+#Generating Random values
+import random
+class Dice:
+    def roll(self):
+        first = random.randint(1,6)
+        second = random.randint(1, 6)
+        return first, second
 
+
+dice= Dice()
+print(dice.roll())
 
 
