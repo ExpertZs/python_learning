@@ -317,7 +317,7 @@ def emoji_converter(message):
     output= " "
     emojis ={
         ":)": "😂",
-        "(:": "😢"
+        ":(": "😢"
     }
     for word in words:
         output+= emojis.get(word, word) + " "
@@ -327,4 +327,17 @@ def emoji_converter(message):
 message = input("> ")
 result= emoji_converter(message)
 print(result)
+
+#Exception
+try:
+    age = int(input("Age: "))
+    income = 25000
+    risk = income/age
+    print(age)
+
+except ZeroDivisionError:
+    print("Can not divided by zero")
+
+except ValueError:
+    print("Invalid Value")
 
