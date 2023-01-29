@@ -1,4 +1,6 @@
 #To print any string
+import random
+
 print('Hey, This is Md. Zahidul Islam')
 #Practice Print
 print('0----')
@@ -398,3 +400,14 @@ import utils                    #Import all function of the mentioned module
 numbers = [6,-4, 55, 66, 8, 66, 62, 44, 22, 101, 11, 123]
 maximum = utils.find_max(numbers)
 print(maximum)
+
+#Package
+import ecommerce.shipping                               #import whole module from package
+from ecommerce import shipping                          #import whole module from package with from syntax
+from ecommerce.shipping import calculate_shipping       #import specific funcion from mentioned module
+
+calculate_shipping()
+
+
+
+
