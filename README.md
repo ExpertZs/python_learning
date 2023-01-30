@@ -4,7 +4,6 @@ Here I will practice following:
 	* First Python Program
 	* Variables
 	* Receiving Input
-	* Python Cheat Sheet 
 	* Type Conversion
 	* Strings
 	* Formatted Strings
