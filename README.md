@@ -40,5 +40,6 @@ Here I will practice following:
 	* Packages
 	* Generating Random Values
 	* Working with Directories
+	* Sets in python
 	* Project 1: Automation with Python
 	* Project 2: Machine Learning with Python 

@@ -430,3 +430,14 @@ for file in path1.glob('*.py'):         #Accessing to the list of all .py file i
     print(file)
 
 
+#Sets in Python -> Set is an unorder collection of unique items unlike list does not support indexing system
+print("Set Example")
+numbers = [1, 5, 6, 5, 2, 5, 45, 5, 45, 5, 4, 5]                #List
+first_set = set(numbers)                                        #Converting a list into a Set
+second_set = {1,2,3,4,5,6}                                      #A Set
+print(first_set | second_set)                                   #Union of two set
+print(first_set & second_set)                                   #Intersection of two set
+print(first_set - second_set)                                   #Dtfference btween two set
+print(first_set ^ second_set)                                   #Symmetric difference between two set
+
+
