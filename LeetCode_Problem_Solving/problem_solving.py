@@ -59,4 +59,16 @@ class Solution:
                 hashmap[nums[index]] = index
         return False
 
+#Leetcode Problem 53. Maximum Subarray
+#Given an integer array nums, find the subarray with the largest sum, and return its sum.
+#Example 1:
+#Input: nums = [-2,1,-3,4,-1,2,1,-5,4]
+#Output: 6
+#Explanation: The subarray [4,-1,2,1] has the largest sum 6.
 
+class Solution:
+    def maxSubArray(self, nums: List[int]) -> int:
+        for index in range(1, len(nums)):
+            if nums[index-1]>0:
+                nums[index] += nums[index-1]
+        return max(nums)
