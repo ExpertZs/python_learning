@@ -72,3 +72,25 @@ class Solution:
             if nums[index-1]>0:
                 nums[index] += nums[index-1]
         return max(nums)
+
+#LeetCode problem 205. Isomorphic Strings
+#Given two strings s and t, determine if they are isomorphic.
+#Two strings s and t are isomorphic if the characters in s can be replaced to get t.
+#All occurrences of a character must be replaced with another character while preserving the order of characters. No two characters may map to the same character, but a character may map to itself.
+#Example 1:
+#Input: s = "egg", t = "add"
+#Output: true
+
+class Solution:
+    def isIsomorphic(self, s: str, t: str) -> bool:
+        map_s_to_t, map_t_to_s = {}, {}
+        for char1, char2 in zip(s, t):
+            if((char1 in map_s_to_t and map_s_to_t[char1] !=  char2 ) or
+            (char2 in map_t_to_s and map_t_to_s[char2] !=  char1 )):
+                return False
+            map_s_to_t[char1] = char2
+            map_t_to_s[char2] = char1
+        return True
+
+
+
