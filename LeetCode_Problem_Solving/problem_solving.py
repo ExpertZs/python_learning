@@ -202,3 +202,18 @@ class Solution:
         head.next = None
         return newHead
 
+#LeetCode Problem 350. Intersection of Two Arrays II
+#Given two integer arrays nums1 and nums2, return an array of their intersection. Each element in the result must appear as many times as it shows in both arrays and you may return the result in any order.
+#Example 1:
+#Input: nums1 = [1,2,2,1], nums2 = [2,2]
+#Output: [2,2]
+
+class Solution:
+    def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        result = []
+        for index in nums1:
+            if index in nums2:
+                result.append(index)
+                nums2.remove(index)
+        return result
+
