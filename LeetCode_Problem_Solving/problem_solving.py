@@ -264,3 +264,50 @@ class Solution:
             fast = fast.next.next
         return slow
 
+#LeetCode problem 142. Linked List Cycle II
+#Given the head of a linked list, return the node where the cycle begins. If there is no cycle, return null.
+#There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the next pointer. Internally, pos is used to denote the index of the node that tail's next pointer is connected to (0-indexed). It is -1 if there is no cycle. Note that pos is not passed as a parameter.
+#Do not modify the linked list.
+#Example 3
+#Input: head = [1], pos = -1
+#Output: no cycle
+#Explanation: There is no cycle in the linked list.
+
+#Follow Up
+#Can you solve it without using extra space?
+#Methodology
+#This is the extension quesion of 141. Linked List Cycle Now we want to return the start node of cycle
+    #    We need to check if there is cycle
+    #    If there is not cycle return None and if there is cycle we set slow pointer to head
+#    If slow pointer and fast pointer are not equal we move 1 step for each pointer until the two pointer conincide, then we get the node of cycle begining.
+#There are lots of explainations online, the best way to try is draw graph yourself. There is simple math behind. Here
+    #    L1: the distance from head to start node of cycle
+    #   L2: the distance from start node of cycle to crossing node of two pointers
+    #    L3: the distance from crossing node of two pointers to start node of cycle
+#Slow pointer to crossing node is L1+L2.
+#Fast pointer to crossing node is 2(L1+L2) since fast pointer always move 2 times of slow pointer step.
+#Fast pointer is also equal to L1+L2+L3+L2 because to meet with slow pointer, the fast pointer has to run over cycle at least 1 time.
+#Therefor 2(L1+L2)=L1+L2+L3+L2 -> 2L1=L1+L3 -> L1 = L3
+
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution:
+    def detectCycle(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        slow, fast = head, head
+        while fast and fast.next:
+            fast = fast.next.next
+            slow = slow.next
+            if fast == slow:
+                break
+        if not fast or not fast.next:
+            return None
+        slow = head
+        while slow != fast:
+            slow = slow.next
+            fast = fast.next
+        return fast
+
