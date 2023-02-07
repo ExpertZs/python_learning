@@ -323,23 +323,35 @@ class Solution:
 
 class Solution:
     def matrixReshape(self, mat: List[List[int]], r: int, c: int) -> List[List[int]]:
-        numbers = []
-        for index1 in range(len(mat)):
-            for index2 in range(len(mat[0])):
-                numbers.append(mat[index1][index2])
-
-        if r * c > len(numbers):
+        if r * c != len(mat) * len(mat[0]):
             return mat
+        new_mat = [[] for _ in range(r)]
+        k = 0
+        for i in range(len(mat)):
+            for j in range(len(mat[0])):
+                if len(new_mat[k]) == c:
+                    k += 1
+                new_mat[k].append(mat[i][j])
+        return new_mat
 
-        results = []
 
-        index = 0
-        for index1 in range(r):
-            results.append([])
-            for index2 in range(c):
-                results[index1].append(numbers[index])
-                index += 1
+#LeetCode Problem 118. Pascal's Triangle
+#Given an integer numRows, return the first numRows of Pascal's triangle.
+#In Pascal's triangle, each number is the sum of the two numbers directly above it as shown:
+#Example 1:
+#Input: numRows = 5
+#Output: [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
 
-        return results
 
+class Solution:
+    def generate(self, numRows: int) -> List[List[int]]:
+        triangles = []
+        for i in range(numRows):
+            triangles.append([])
+            for j in range(i + 1):
+                if j == 0 or j == i:
+                    triangles[i].append(1)
+                else:
+                    triangles[i].append(triangles[i - 1][j - 1] + triangles[i - 1][j])
+        return triangles
 
