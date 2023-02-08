@@ -355,3 +355,28 @@ class Solution:
                     triangles[i].append(triangles[i - 1][j - 1] + triangles[i - 1][j])
         return triangles
 
+#LeetCode Problem 409. Longest Palindrome
+#Given a string s which consists of lowercase or uppercase letters, return the length of the longest palindrome that can be built with those letters.
+#Letters are case sensitive, for example, "Aa" is not considered a palindrome here.
+#Example 1:
+#Input: s = "abccccdd"
+#Output: 7
+#Explanation: One longest palindrome that can be built is "dccaccd", whose length is 7.
+
+
+
+class Solution:
+    def longestPalindrome(self, s: str) -> int:
+        store_dic = dict()
+        for single_str in s:
+            if single_str in store_dic:
+                del store_dic[single_str]
+            else:
+                store_dic[single_str] = 1
+
+        if len(store_dic) == 0:
+            return len(s) - len(store_dic)
+        else:
+            return len(s) - len(store_dic) + 1
+
+
